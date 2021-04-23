@@ -1,0 +1,16 @@
+<app-top-bar></app-top-bar>
+<div>
+  <h3>
+    <a [title]="product.name + ' details'">
+      <img src="{{product.img}}" height="150" id="iconMain" />
+      <p></p>
+      <a routerLink="items/{{product.id}}" target="_blank">{{product.name}}</a>
+    </a>
+    <p>
+      Description: {{ product.description }}
+      <br>
+      <br>
+      Rating: {{product.rating}}
+    </p>
+  </h3>
+</div>
